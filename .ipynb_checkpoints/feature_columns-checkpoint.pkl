@@ -1,0 +1,6 @@
+import pickle
+
+# Save feature columns (run this after training)
+feature_columns = list(X.columns)          # X is your training features
+pickle.dump(feature_columns, open('feature_columns.pkl', 'wb'))
+print("Feature columns saved!")
