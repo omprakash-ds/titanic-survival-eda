@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
 # Load data
-df = pd.read_csv('train.csv')
+df = pd.read_csv('data/train.csv')
 
 # Fix FutureWarning — modern pandas syntax
 df['Age'] = df['Age'].fillna(df['Age'].median())
